@@ -1,27 +1,57 @@
-<nav class="navbar" style="background-color: #e3f2fd;">
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="http://localhost:3000" ><img src="img/logo.png" alt="" width="90px"></a>
-    
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
+<nav class="navbar">
+    <a class="navbar-brand" href="http://localhost:3000" ><img src="img/logo.png" alt="" ></a>
+    <div class="input-group">
+        <div class="search-input">
+            {{!-- <i class="bi bi-search"></i> --}}
+            <input class="search-text" type="text" placeholder="        Search movies, TV, actors, more...">
+        </div>
     </div>
-  </div>
+    <div class="column">
+        <ul class="nav-links">
+            <li>
+                <a href="https://www.rottentomatoes.com/about#whatisthetomatometer">What's the Tomatometer®?</a>
+            </li>
+            <li>
+                <a href="https://www.rottentomatoes.com/critics">Critics</a>
+            </li>
+            <li>
+                <button>LOGIN/SIGNUP</button>
+            </li>
+        </ul>
+        <nav>
+          <rt-header-nav-item>
+            <a class="unset" href="#">MOVIES</a>
+          </rt-header-nav-item>
+          <rt-header-nav-item>
+            <a class="unset" href="#">TV SHOWS</a>
+          </rt-header-nav-item>
+          <rt-header-nav-item>
+            <a class="unset" href="#">MOVIE TRIVIA</a>
+          </rt-header-nav-item>
+          <rt-header-nav-item>
+            <a class="unset" href="#">NEWS</a>
+          </rt-header-nav-item>
+          <rt-header-nav-item>
+            <a class="unset" href="#">SHOWTIMES</a>
+          </rt-header-nav-item>
+        </nav>
+    </div>
+    </div>
 </nav>
-</nav>
+
+<section class="trending-bar">
+    <div class="trending-list-wrap">
+        <ul class="list-inline trending-bar__list">
+            <li class="trending-bar__header">TRENDING ON RT</li>
+            <li class="trending-bar__link"> RT25 AMC Screening Series </li>
+            <li class="trending-bar__link"> No One Will Save You </li>
+            <li class="trending-bar__link"> The Creator </li>
+            <li class="trending-bar__link"> The Continental  </li>
+            <li class="trending-bar__link"> Expend4bles </li>
+        </ul>
+    </div>
+    {{!-- <div class="trending-bar__link">
+        <social-media-icons theme="light" size="14"></social-media-icons>
+    </div> --}}
+</section>
+
