@@ -47,26 +47,30 @@
                     </a>
                 </section>
 
-                <div class="header-warp">
-                  <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
-
-                  {{#each movies}}  
-                  <div class="col">
-                    <div class="card h-200">
-                      <a href="/movies/{{this.slug}}">
-                        <img src="{{this.image}}" class="card-img-top">
-                      </a>
-                      <div class="card-body">
-                        <a href="/movies/{{this.slug}}">
-                          <h5 class="card-title">{{this.name}}</h5>
-                        </a>
-                        <p class="card-text">{{this.movieInfo}}</p>
-                      </div>
+                <section id="poster-list">
+                    <div class="poster-list-header">
+                        <h2>NEW & UPCOMING MOVIES IN THEATERS</h2>
                     </div>
-                  </div>
-                  {{/each}}
-                  </div>
-                </div>
+                    <div class="header-warp">
+                        <div class="row row-cols-1 row-cols-md-5 g-3">
+
+                        {{#each movies}}  
+                        <div class="coll">
+                            <div class="card-poster">
+                            <a href="/movies/{{this.slug}}">
+                                <img src="{{this.image}}" class="card-img">
+                            </a>
+                            <div class="card-film-body">
+                                <a href="/movies/{{this.slug}}">
+                                <h5 class="card-title">{{this.name}}</h5>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                        {{/each}}
+                        </div>
+                    </div>
+                </section>
                 
             </section>
 
