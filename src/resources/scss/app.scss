@@ -9,6 +9,7 @@ body {
     margin-bottom: -48px;
     padding-bottom: -48px;
 }
+
 .container {
     width: 1100px;
     height: auto;
@@ -29,6 +30,8 @@ p {
     font-weight: 400;
 }
 
+// ---------------------------------------------------
+// <HEADER>
 .navbar {
     background-color: #fa320a;
     padding: 0;
@@ -131,8 +134,8 @@ rt-header-nav-item .unset {
     justify-content: flex-end;
 }
 
-// --------------------------------------------------------
-// !! TRENDING BAR !!
+// --
+// -- TRENDING BAR --
 .trending-bar {
     background-color: #7b7b7b; /* Chọn màu xám mà bạn muốn */
     font-family: 'Libre Franklin', sans-serif;
@@ -143,7 +146,7 @@ rt-header-nav-item .unset {
     margin: auto;
 }
 
-/* Đảm bảo các phần tử li nằm trên cùng một hàng ngang */
+
 .trending-bar__list {
     color: white;
     display: flex; /* Sử dụng flexbox để xếp hàng ngang */
@@ -159,14 +162,14 @@ rt-header-nav-item .unset {
     margin: 0 10px;
 }
 
-/* Thiết lập kiểu dáng cho các phần tử li */
+
 .trending-bar__link {
     margin: 2px 5px;
     white-space: nowrap; /* Ngăn các phần tử quá nhiều sẽ xuống dòng */
 }
 
-// --------------------------------------------------------
-// !! SPOTLIGHT !!
+// --
+// -- SPOTLIGHT --
 #editorial-spotlight {
     margin-left: -12px;
     margin-top: -16px;
@@ -206,6 +209,7 @@ rt-header-nav-item .unset {
     margin-top: -301px;
     margin-right: -465px;
 }
+
 // ----------------------------------------------------
 // <MAIN CONTENT>
 // -- HOME --
@@ -275,6 +279,7 @@ rt-header-nav-item .unset {
     height: 417px;
     border-radius: 10px;
 }
+
 // ----------------------------------------------------
 // <FOOTER>
 footer {
