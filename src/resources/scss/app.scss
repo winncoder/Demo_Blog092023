@@ -6,16 +6,14 @@ body {
     padding: 0;
     margin: 0;
     background-color: #f3f3f3;
-    margin-bottom: -48px;
-    padding-bottom: -48px;
 }
 
 .container {
     width: 1100px;
     height: auto;
     background-color: #ffffff;
-    // display: flex;
-    margin-bottom: -25px;
+    display: flex;
+    margin-top: 0px;
     // padding: 0;
     // margin-left: 12px;
 }
@@ -28,6 +26,17 @@ a {
 p {
     font-family: 'Libre Franklin', sans-serif;
     font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0.256px;
+    margin: 0;
+}
+
+.text-bold {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    letter-spacing: 0.256px;
+    margin: 0;
 }
 
 // ---------------------------------------------------
@@ -146,6 +155,9 @@ rt-header-nav-item .unset {
     margin: auto;
 }
 
+.trending-list-wrap ul {
+    margin-bottom: 0;
+}
 
 .trending-bar__list {
     color: white;
@@ -172,7 +184,7 @@ rt-header-nav-item .unset {
 // -- SPOTLIGHT --
 #editorial-spotlight {
     margin-left: -12px;
-    margin-top: -16px;
+    margin-top: 0;
     height: auto;
     width: 1100px;
 }
@@ -213,19 +225,19 @@ rt-header-nav-item .unset {
 // ----------------------------------------------------
 // <MAIN CONTENT>
 // -- HOME --
-.poster-list-header::before {
+.list-header::before {
     content: "";
     display: block;
-    width: 2px;
-    height: 24px;
+    width: 3px;
+    height: 21px;
     background-color: #fa320a;
-    margin-right: 8px;
-    margin-bottom: -10px;
+    margin-right: 7px;
+    margin-bottom: -14px;
     float: left; /* Để ô chữ nhật nằm bên trái của h2 */
     content: "";
   }
 
-.poster-list-header h2 {
+h2 {
     font-family: 'Oswald', sans-serif;
     font-size: 18.5px;
     margin-top: 30px;
@@ -233,6 +245,15 @@ rt-header-nav-item .unset {
 
 .header-warp {
     margin-top: 20px;
+}
+
+#poster-main {
+    max-width: 1100px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -9px;
 }
 
 .card-img {
@@ -259,26 +280,84 @@ rt-header-nav-item .unset {
 }
 
 // -- SHOW --
+#movie-overview {
+    margin: 15px 0;
+}
+
 .movie-layout__sidebar {
     width: 313px;
     height: auto;
     float: left;
-    border: 1px solid rgb(92, 92, 92);
-    display: block;
-  }
-  
-.movie-layout__main {
-    width: 750px;
-    height: auto;
-    margin-left: 325px; /* Khoảng cách giữa .movie-layout__sidebar và .movie-layout__main */
-    background-color: aqua;
+    border: 1px solid rgb(199, 199, 199);
+    background-color: #ebebeb;
+    display: flex; //lúc update có thể bỏ phần này
+    align-items: center; //lúc update có thể bỏ phần này
+    flex-direction: column; //lúc update có thể bỏ phần này
   }
 
-.movie-layout__main iframe {
+.movie-layout__trailer {
+    width: 750px;
+    height: auto;
+    margin-left: 325px;
+    display: flex;
+    flex-direction: column;
+  }
+
+.movie-layout__trailer iframe {
     width: 750px;
     height: 417px;
-    border-radius: 10px;
+    border-radius: 6px;
 }
+
+.thumbnail-scoreboard-wrap {
+    width: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+
+.thumbnail {
+    width: auto;
+}
+
+.thumbnail img {
+    width: 165px;
+    height: 222px;
+    border-radius: 5px;
+}
+
+.score-board {
+    background-color: #ebebeb;
+    width: 570px;
+    height: 222px;
+    border-radius: 5px;
+}
+
+.score-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.score-board h1 {
+    color: #000;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+.score-board p {
+    font-size: 13px;
+}
+
+.movie-info-body {
+    margin: 20px 0 30px 0;
+}
+
+
 
 // ----------------------------------------------------
 // <FOOTER>
@@ -288,7 +367,6 @@ footer {
     font-weight: 400;
     font-size: 14px;
     width: 1100px;
-    margin-top: 0px !important;
 }
 
 footer div {

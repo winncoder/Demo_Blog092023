@@ -1,12 +1,85 @@
 <div class="container">
     <section id="movie-overview">
         <aside id="sidebar" class="movie-layout__sidebar">
-        
+            <h5>News</h5>
+            <p>loading...</p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
         </aside>
         
-        <div class="movie-layout__main">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/hEJnMQG9ev8?si=weYIDoUqFcj8FnjV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="movie-layout__info">
+            <div class="movie-layout__trailer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/{{movies.trailerId}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <section class="movie-layout__trailer">
+                <div class="thumbnail-scoreboard-wrap">
+                    <div class="thumbnail">
+                        <img src="{{movies.image}}">
+                    </div>
+                    <div class="score-board">
+                        <h1>{{movies.name}}</h1>
+                        <p>Genre: {{movies.genre}}</p>
+                        <div class="scores-container">
+                            <div class="tomatometer-container"></div>
+                            <div class="audience-container"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="movie-info">
+                    <div class="list-header">
+                        <h2>MOVIE INFO</h2>
+                    </div>
+                    <p class="movie-info-body">{{movies.movieInfo}}</p>
+                    <p><span class="text-bold">Genre:</span> {{movies.genre}}</p>
+                    <p><span class="text-bold">Director:</span> {{movies.director}}</p>
+                    <div class="list-header">
+                        <h2>RATE AND REVIEW</h2>
+                    </div>
+                </div>
+            </section>
         </div>
+        
     </section>
 </div>
 

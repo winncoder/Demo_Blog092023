@@ -7,6 +7,7 @@ const Movie = new Schema({
     genre: { type: String, maxLength: 255 },
     director: { type: String, maxLength: 255 },
     image: { type: String },
+    movieInfo: { type: String },
     releaseDate: { type: String, default: Date.now },
 });
 

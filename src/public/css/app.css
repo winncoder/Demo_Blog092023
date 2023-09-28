@@ -4,15 +4,14 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #f3f3f3;
-  margin-bottom: -48px;
-  padding-bottom: -48px; }
+  background-color: #f3f3f3; }
 
 .container {
   width: 1100px;
   height: auto;
   background-color: #ffffff;
-  margin-bottom: -25px; }
+  display: flex;
+  margin-top: 0px; }
 
 a {
   font-family: 'Libre Franklin', sans-serif;
@@ -20,7 +19,17 @@ a {
 
 p {
   font-family: 'Libre Franklin', sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.256px;
+  margin: 0; }
+
+.text-bold {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+  letter-spacing: 0.256px;
+  margin: 0; }
 
 .navbar {
   background-color: #fa320a;
@@ -115,7 +124,9 @@ rt-header-nav-item .unset {
   margin-left: -15px;
   margin: auto; }
 
-/* Đảm bảo các phần tử li nằm trên cùng một hàng ngang */
+.trending-list-wrap ul {
+  margin-bottom: 0; }
+
 .trending-bar__list {
   color: white;
   display: flex;
@@ -133,7 +144,6 @@ rt-header-nav-item .unset {
   color: #ffe600;
   margin: 0 10px; }
 
-/* Thiết lập kiểu dáng cho các phần tử li */
 .trending-bar__link {
   margin: 2px 5px;
   white-space: nowrap;
@@ -141,7 +151,7 @@ rt-header-nav-item .unset {
 
 #editorial-spotlight {
   margin-left: -12px;
-  margin-top: -16px;
+  margin-top: 0;
   height: auto;
   width: 1100px; }
 
@@ -173,25 +183,33 @@ rt-header-nav-item .unset {
   margin-top: -301px;
   margin-right: -465px; }
 
-.poster-list-header::before {
+.list-header::before {
   content: "";
   display: block;
-  width: 2px;
-  height: 24px;
+  width: 3px;
+  height: 21px;
   background-color: #fa320a;
-  margin-right: 8px;
-  margin-bottom: -10px;
+  margin-right: 7px;
+  margin-bottom: -14px;
   float: left;
   /* Để ô chữ nhật nằm bên trái của h2 */
   content: ""; }
 
-.poster-list-header h2 {
+h2 {
   font-family: 'Oswald', sans-serif;
   font-size: 18.5px;
   margin-top: 30px; }
 
 .header-warp {
   margin-top: 20px; }
+
+#poster-main {
+  max-width: 1100px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-left: -9px; }
 
 .card-img {
   border-radius: 7px;
@@ -213,32 +231,76 @@ rt-header-nav-item .unset {
   display: flex;
   align-items: flex-start; }
 
+#movie-overview {
+  margin: 15px 0; }
+
 .movie-layout__sidebar {
   width: 313px;
   height: auto;
   float: left;
-  border: 1px solid #5c5c5c;
-  display: block; }
+  border: 1px solid #c7c7c7;
+  background-color: #ebebeb;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
 
-.movie-layout__main {
+.movie-layout__trailer {
   width: 750px;
   height: auto;
   margin-left: 325px;
-  /* Khoảng cách giữa .movie-layout__sidebar và .movie-layout__main */
-  background-color: aqua; }
+  display: flex;
+  flex-direction: column; }
 
-.movie-layout__main iframe {
+.movie-layout__trailer iframe {
   width: 750px;
   height: 417px;
-  border-radius: 10px; }
+  border-radius: 6px; }
+
+.thumbnail-scoreboard-wrap {
+  width: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px 0; }
+
+.thumbnail {
+  width: auto; }
+
+.thumbnail img {
+  width: 165px;
+  height: 222px;
+  border-radius: 5px; }
+
+.score-board {
+  background-color: #ebebeb;
+  width: 570px;
+  height: 222px;
+  border-radius: 5px; }
+
+.score-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.score-board h1 {
+  color: #000;
+  font-family: 'Oswald', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-top: 25px; }
+
+.score-board p {
+  font-size: 13px; }
+
+.movie-info-body {
+  margin: 20px 0 30px 0; }
 
 footer {
   background-color: #2a2c32;
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  width: 1100px;
-  margin-top: 0px !important; }
+  width: 1100px; }
 
 footer div {
   background-color: #2a2c32; }
