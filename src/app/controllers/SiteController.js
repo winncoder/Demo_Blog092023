@@ -6,8 +6,8 @@ class SiteController {
 
     async home(req, res) {
         try {
-            const movies = await Movie.find({});
-            res.render('home', { movies: mutilpleMongooseToObject(movies) });
+            const movie = await Movie.find({});
+            res.render('home', { movies: mutilpleMongooseToObject(movie) });
         } catch (err) {
             res.status(400).json({ error: 'ERROR!!!' });
         }

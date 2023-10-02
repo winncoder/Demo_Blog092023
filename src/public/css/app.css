@@ -11,6 +11,7 @@ body {
   height: auto;
   background-color: #ffffff;
   display: flex;
+  flex-direction: column;
   margin-top: 0px; }
 
 a {
@@ -208,7 +209,6 @@ h2 {
   flex-wrap: wrap;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   margin-left: -9px; }
 
 .card-img {
@@ -294,6 +294,9 @@ h2 {
 
 .movie-info-body {
   margin: 20px 0 30px 0; }
+
+.list-header {
+  order: -1; }
 
 footer {
   background-color: #2a2c32;
