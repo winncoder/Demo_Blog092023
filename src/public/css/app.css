@@ -32,6 +32,11 @@ p {
   letter-spacing: 0.256px;
   margin: 0; }
 
+button {
+  color: #ffffff;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px; }
+
 .navbar {
   background-color: #fa320a;
   padding: 0;
@@ -297,6 +302,20 @@ h2 {
 
 .list-header {
   order: -1; }
+
+.btn.btn-primary {
+  margin: 20px 0;
+  background-color: #fa320a;
+  border-color: #fa320a; }
+
+.create-body form {
+  margin-top: 25px; }
+
+.form-group {
+  margin: 10px 0; }
+
+.form-control {
+  width: 500px; }
 
 footer {
   background-color: #2a2c32;

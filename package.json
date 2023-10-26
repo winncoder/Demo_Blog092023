@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/winncoder/Demo_Blog092023.git"
+    "url": "https://github.com/winncoder/Rotten_Tomatoes"
   },
   "keywords": [
     "blog",
@@ -23,9 +23,9 @@
   "author": "win",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/winncoder/Demo_Blog082023/issues"
+    "url": "https://github.com/winncoder/Rotten_Tomatoes/issues"
   },
-  "homepage": "https://github.com/winncoder/Demo_Blog082023#readme",
+  "homepage": "https://github.com/winncoder/Rotten_Tomatoes#readme",
   "lint-staged": {
     "src/**/*.{js,json,scss}": [
       "prettier --single-quote --trailing-comma all --tab-width 4 --write",
@@ -35,7 +35,7 @@
   "dependencies": {
     "debug": "^4.3.1",
     "express": "^4.18.2",
-    "mongoose": "^7.5.3",
+    "mongoose": "^6.10.0",
     "mongoose-slug-generator": "^1.0.4",
     "uuid": "^7.0.3",
     "vercel": "^32.3.0"

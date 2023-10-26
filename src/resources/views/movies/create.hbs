@@ -1,33 +1,35 @@
 <div class="container">
-    <div class="list-header">
-        <h2>CREATE MOVIE</h2>
-    </div>
-    <form method="POST" action="/movies/cinema">
-        <div class="form-group">
-            <label for="name">Movie Name</label>
-            <input type="text" class="form-control" id="name" name="name" placeholder="Enter email">
+    <section class="create-body">
+        <div class="list-header">
+            <h2>CREATE MOVIE</h2>
         </div>
-        <div class="form-group">
-            <label for="name">Movie Info</label>
-            <input type="text" class="form-control" id="movieInfo" name="movieInfo">
-        </div>
-        <div class="form-group">
-            <label for="genre">Genre</label>
-            <input type="text" class="form-control" id="genre" name="genre">
-        </div>
-        <div class="form-group">
-            <label for="director">Director</label>
-            <input type="text" class="form-control" id="director" name="director">
-        </div>
-        <div class="form-group">
-            <label for="image">Movie Poster</label>
-            <input type="text" class="form-control" id="image" name="image">
-        </div>
-        <div class="form-group">
-            <label for="trailerId">Trailer ID</label>
-            <input type="text" class="form-control" id="trailerId" name="trailerId">
-        </div>
-        
-        <button type="submit" class="btn btn-primary">Add Movie</button>
-    </form>
+        <form method="POST" action="/movies/cinema">
+            <div class="form-group">
+                <label for="name">Movie Name</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="name">Movie Info</label>
+                <input type="text" class="form-control" id="movieInfo" name="movieInfo">
+            </div>
+            <div class="form-group">
+                <label for="genre">Genre</label>
+                <input type="text" class="form-control" id="genre" name="genre">
+            </div>
+            <div class="form-group">
+                <label for="director">Director</label>
+                <input type="text" class="form-control" id="director" name="director">
+            </div>
+            <div class="form-group">
+                <label for="image">Movie Poster</label>
+                <input type="text" class="form-control" id="image" name="image" placeholder="Enter poster link">
+            </div>
+            <div class="form-group">
+                <label for="trailerId">Trailer ID</label>
+                <input type="text" class="form-control" id="trailerId" name="trailerId" placeholder="Enter trailer ID">
+            </div>
+            
+            <button type="submit" class="btn btn-primary">ADD MOVIE</button>
+        </form>
+    </section>
 </div>

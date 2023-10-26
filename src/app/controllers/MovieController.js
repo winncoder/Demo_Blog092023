@@ -11,7 +11,7 @@ class MovieController {
         // res.send('MOVIE DETAIL - ' + req.params.slug);
     }
 
-    //[POST] /movies/cinema POST là tạo thêm 1 tài nguyên
+    //[POST] /movies/create
     async create(req, res, next) {
         try {
             const movie = await Movie.findOne({ slug: req.params.slug });
@@ -19,15 +19,17 @@ class MovieController {
         } catch (next) {}
     }
 
+    //[POST] /movies/cinema POST là tạo thêm 1 tài nguyên ../../util/mongoose
     async cinema(req, res, next) {
         // res.json(req.body);
 
         const movie = new Movie(req.body);
-        await movie.save()
-            .then(() => res.redirect('/'))
-            .catch(error => {
-
-            });
+        try {
+            await movie.save();
+            res.redirect('/');
+        } catch (error) {
+            next(error);
+        }
     }
 
     
